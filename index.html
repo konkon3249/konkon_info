@@ -1,91 +1,78 @@
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kohei Ishikawa(石川晃平) - Profile Page</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>あなたの名前 - プロフィールページ</title>
+    <style>
+      body {
+        background-image: url(./images/bg-image.jpg);
+        background-size: cover;
+        margin: 0;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+      header img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+      header h1 {
+        color:#ffffff;
+      }
+      section {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.80);
+        margin: 20px auto;
+        max-width: 50%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      section h2 {
+        margin: 10px;
+      }
+      section ul {
+        margin-left: 30px;
+      }
+      @media screen and (max-width: 600px) {
+        section {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/profile.png" alt="自分の写真">
+      <h1>あなたの名前</h1>
+    </header>
+    <section>
+      <h2>現在の職業</h2>
+      <p>現在の職業をここに追加してください。</p>
+    </section>
+    <section>
+      <h2>経歴</h2>
+      <ul>
+        <li>経歴1</li>
+        <li>経歴2</li>
+        <li>経歴3</li>
+      </ul>
+    </section>
+    <section>
+      <h2>興味・関心</h2>
+      <ul>
+        <li>興味1</li>
+        <li>興味2</li>
+        <li>興味3</li>
+      </ul>
+    </section>
+    <section>
+      <h2>連絡先</h2>
+      <ul>
+        <li>電話番号：xxx-xxxx-xxxx</li>
+        <li>メールアドレス：<a href="mailto:your.email@example.com">your.email@example.com</a></li>
 
-            .wrap {
-                padding: 32px 0 64px;
-                background-color: #54B1E5;
-            }
-
-            .content {
-                width: 100%;
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 16px;
-                background-color: #fff;
-            }
-
-            .heading-lv1 {
-                font-size: 32px;
-                font-style: italic;
-            }
-
-            .heading-lv2 {
-                font-size: 24px;
-            }
-
-            .heading-lv3 {
-                font-size: 20px;
-            }
-
-            .heading-margin {
-                margin-top: 32px;
-            }
-
-            .text {
-                margin: 16px 0 0;
-                font-size: 16px;
-                line-height: 1.5;
-            }
-
-            .text-center {
-                text-align: center;
-            }
-
-            .profile-image {
-                margin: 16px 0 0;
-                text-align: center;
-            }
-
-            .profile-image img {
-                width: 150px;
-                height: auto;
-                border-radius: 5%;
-            }
-
-            a {
-                color: #3F82A8;
-            }
-
-            a:hover {
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body class="wrap">
-        <div class="content">
-            <h1 class="heading-lv1 text-center">Profile</h1>
-            <figure class="profile-image">
-                <img src="./images/profile.png" alt="Profile Image" width="300" height="300">
-            </figure>
-
-            <h2 class="heading-lv2 heading-margin text-center">石川　晃平</h2>
-            <p class="text text-center">名古屋大学工学研究科</p>
-            <p class="text text-center">未来エレクトロニクス創成加速 DII協働大学院プログラム</p>
-            <p class="text text-center">特任教員</p>
-
-            <h3 class="heading-lv3 heading-margin text-center">自己紹介</h3>
-            <p class="text text-center">ここに自己紹介を書く</p>
-
-            <p class="text text-center"><a href="./links.html">リンク</a></p>
-        </div>
-    </body>
+      </ul>
+    </section>
+  </body>
 </html>
